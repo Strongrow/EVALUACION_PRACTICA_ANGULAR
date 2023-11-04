@@ -1,0 +1,26 @@
+.table {
+    width: 50%; /* Ajusta el ancho de la tabla al 50% */
+    margin: 0 auto; /* Centra la tabla horizontalmente */
+    float: left;
+  }
+  
+  /* Estilos para el encabezado de la tabla */
+  thead {
+    background-color: black; /* Color de fondo del encabezado */
+    color: white; /* Color del texto en el encabezado */
+  }
+  
+  /* Estilos para las celdas del encabezado */
+  th {
+    text-align: left; /* Centra el texto en las celdas */
+  }
+  
+  /* Estilos para las filas de la tabla */
+  tr {
+    text-align: left; /* Centra el texto en las filas */
+  }
+  
+  /* Estilos para las celdas de la tabla */
+  td {
+    padding: 8px; /* Añade relleno a las celdas */
+  }

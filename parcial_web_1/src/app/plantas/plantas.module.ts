@@ -8,7 +8,8 @@ import { PlantasComponent } from './plantas.component';
   imports: [
     CommonModule, BrowserModule, AppRoutingModule
   ],
-  declarations: [PlantasComponent],
-  providers: []
+  declarations: [],
+  providers: [],
+  exports: []
 })
 export class PlantasModule { }
