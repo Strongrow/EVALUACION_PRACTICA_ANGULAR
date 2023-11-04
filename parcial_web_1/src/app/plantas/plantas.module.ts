@@ -1,11 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { BrowserModule } from '@angular/platform-browser';
+import { AppRoutingModule } from '../app-routing.module';
 import { PlantasComponent } from './plantas.component';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule, BrowserModule, AppRoutingModule
   ],
-  declarations: [PlantasComponent]
+  declarations: [PlantasComponent],
+  providers: []
 })
 export class PlantasModule { }
