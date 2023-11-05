@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -8,6 +8,7 @@ import { PlantasModule } from './plantas/plantas.module';
 import { PlantasService } from './plantas/plantas.service';
 import { PlantasComponent } from './plantas/plantas.component';
 import { HeaderComponent } from './layout/header/header.component';
+import { HeaderModule } from './layout/header/header.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HeaderComponent } from './layout/header/header.component';
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    PlantasModule
+    PlantasModule,
+    HeaderModule
   ],
   exports:[PlantasComponent,HeaderComponent],
   providers: [PlantasService],

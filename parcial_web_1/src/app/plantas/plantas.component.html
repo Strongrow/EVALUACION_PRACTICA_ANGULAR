@@ -1,29 +1,30 @@
-<table class="table">
-  <thead>
-    <tr class="table-dark">
-      <th scope="col">#</th>
-      <th scope="col">Nombre Común</th>
-      <th scope="col">Tipo</th>
-      <th scope="col">CLima</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let plant of plantas; let i = index">
-      <th scope="row">{{i + 1}}</th>
-      <td>{{plant.nombre_comun}}</td>
-      <td>{{plant.tipo}}</td>
-      <td>{{plant.clima}}</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td colspan="2">Larry the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr class="table-dark">
+        <th scope="col">#</th>
+        <th scope="col">Nombre Común</th>
+        <th scope="col">Tipo</th>
+        <th scope="col">Clima</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class = "table-plants" *ngFor="let plant of plantas; let i = index">
+        <th scope="row">{{i + 1}}</th>
+        <td>{{plant.nombre_comun}}</td>
+        <td>{{plant.tipo}}</td>
+        <td>{{plant.clima}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="table table-borderless">
+    <tbody>
+      <tr>
+        <td class="left-align">Total plantas de interior:  {{totalPlantasInterior}}</td>
+      </tr>
+      <tr>
+        <td class="left-align">Total plantas de exterior:  {{totalPlantasExterior}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
