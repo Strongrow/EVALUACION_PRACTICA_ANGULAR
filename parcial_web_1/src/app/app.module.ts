@@ -9,21 +9,25 @@ import { PlantasService } from './plantas/plantas.service';
 import { PlantasComponent } from './plantas/plantas.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { HeaderModule } from './layout/header/header.module';
+import { FooterComponent } from './layout/footer/footer.component';
+import { FooterModule } from './layout/footer/footer.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     PlantasComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
     PlantasModule,
-    HeaderModule
+    HeaderModule,
+    FooterModule
   ],
-  exports:[PlantasComponent,HeaderComponent],
+  exports: [PlantasComponent, HeaderComponent, FooterComponent],
   providers: [PlantasService],
   bootstrap: [AppComponent]
 })
